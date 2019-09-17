@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Skydiving Incident Report</title>
+</head>
+<body>
+    <h1>Skydiving Incident Report</h1>
+    <form method="POST" action="https://postman-echo.com/post">
+
+        <div>
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label foe="female">Female</label>
+            </div
+        </div>
+
+        <div>
+            <label>Accident-Time</label>
+               <div> 
+                    <input type="radio" id="morning" name="time" value="morning" />
+                    <label for="morning">Morning</label>
+                </div>
+                <div>
+                    <input type="radio" id="noon" name="time" value="noon" />
+                    <label for="noon">Noon</label>
+                </div>
+                <div>
+                    <input type="radio" id="night" name="time" value="night" />
+                    <label for="night">Night</label>
+                </div>
+        </div>
+
+        <div>
+            <label>Province</label>
+            <select id="province" name="province">
+                <option>Select-One</option>
+                <option value="" selected>Ontario</option>
+                <option value="">Quebec</option>
+                <option value="">British Columbia</option>
+                <option value="">Alberta</option>
+                <option value="">Manitoba</option>
+                <option value="">Nova Scotia</option>
+                <option value="">New Brunswick</option>
+                <option value="">Nunavut</option>
+                <option value="">Yukon</option>
+                <option vlue="">Prince Edward Island</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Accident-Location-Type</label>
+            <div>
+                <input type="checkbox" id="coomercial" name="loc" />
+                <label for="commercial">Commercial Area</label>
+            </div>
+            <div>
+                <input type="checkbox" id="residential" name="loc" />
+                <label for="residential">Residential Area</label>
+            </div>
+            <div>
+                <input type="checkbox" id="remote" name="loc" />
+                <label for="remote">Remote Area</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="details">Details in word</label>
+            <input type="text" id="details" name="details" />
+        </div>
+
+        <div>
+            <label>Victim's Profession</label>
+            <div>
+                <input type="checkbox" id=" actor" name="prof" />
+                <label for="actor">Actor</label>
+            </div>
+            <div>
+                <input type="checkbox" id=" selfemployed" name="prof" />
+                <label for="selfemployed">Self-Employed</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pilot" name="prof" />
+                <label for="pilot">Pilot</label>
+            </div>
+            <div>
+                <input type="checkbox" id=" teacher" name="prof" />
+                <label for="teacher">Teacher</label>
+            </div>
+            <div>
+                <input type="checkbox" id=" engineer" name="prof" />
+                <label for="engineer">Engineer</label>
+            </div>
+            <div>
+                <input type="checkbox" id="doctor" name="prof" />
+                <label for="doctor">Doctor</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Enter" />
+
+    </form>
+</body>
+</html>
